@@ -126,10 +126,31 @@ input::-webkit-inner-spin-button {
 }
 
 #map{
-    height: 100vw;
+    height: 50vw;
     z-index: 0;
     /* background-color: #3a3a3a; */
 }
+
+/* .up{
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: black;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    top: 30vw;
+
+}
+
+.up:hover{
+    background-color: hsl(0, 0%, 17%);
+
+}
+
+.up svg{
+    transform: rotate(-90deg);
+} */
 
 @media only screen and (max-width: 800px){
 
