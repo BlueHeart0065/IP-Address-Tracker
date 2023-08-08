@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -26,7 +25,7 @@ body {
     font-weight: 500;
 }
 
-.searchBar{
+.searchBar {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -38,7 +37,7 @@ body {
     overflow: hidden;
 }
 
-.search-input{
+.search-input {
     border: none;
     font-family: 'Rubik';
     width: 27vw;
@@ -50,36 +49,36 @@ body {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.search-input:focus{
+.search-input:focus {
     outline: none;
 }
 
-.search-input:focus::placeholder{
+.search-input:focus::placeholder {
     color: transparent;
 }
 
-.searchButton{
+.searchButton {
     background-color: black;
     height: 3.5vw;
     width: 3.5vw;
     cursor: pointer;
 }
 
-.searchButton:hover{
+.searchButton:hover {
     background-color: hsl(0, 0%, 17%);
 }
 
-.searchButton svg{
+.searchButton svg {
     width: 1vw;
     height: 1vw;
     margin: 1.2vw 1.2vw 1.2vw 1.3vw;
 }
 
-.result{
+.result {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -92,7 +91,10 @@ input::-webkit-inner-spin-button {
     z-index: 4;
 }
 
-.IP , .location , .ISP , .timezone{
+.IP,
+.location,
+.ISP,
+.timezone {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -101,7 +103,7 @@ input::-webkit-inner-spin-button {
     /* border-right: 1px solid hsl(0, 0%, 59%); */
 }
 
-.heading{
+.heading {
     font-family: 'Rubik';
     font-size: 0.8vw;
     font-weight: 700;
@@ -109,7 +111,10 @@ input::-webkit-inner-spin-button {
     letter-spacing: 2px;
 }
 
-.IP-result , .location-result , .ISP-result , .timezone-result{
+.IP-result,
+.location-result,
+.ISP-result,
+.timezone-result {
     font-size: 1vw;
     font-size: 1.7vw;
     color: #3a3a3a;
@@ -121,11 +126,11 @@ input::-webkit-inner-spin-button {
     height: fit-content;
 }
 
-.IP{
+.IP {
     margin-left: 3vw;
 }
 
-#map{
+#map {
     height: 50vw;
     z-index: 0;
     /* background-color: #3a3a3a; */
@@ -152,78 +157,82 @@ input::-webkit-inner-spin-button {
     transform: rotate(-90deg);
 } */
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
 
-    .title{
+    .title {
         font-size: 6vw;
         margin-top: 8vw;
     }
 
-    .searchBar{
+    .searchBar {
         height: 15vw;
         margin-top: 5vw;
     }
 
-    .search-input{
+    .search-input {
         width: 70vw;
         height: 13vw;
         font-size: 5vw;
         margin-left: 5vw;
     }
 
-    .search-input::placeholder{
+    .search-input::placeholder {
         font-size: 4vw;
     }
 
-    .searchButton{
+    .searchButton {
         width: 15vw;
         height: 15vw;
     }
 
-    .searchButton svg{
+    .searchButton svg {
         width: 50vw;
         height: 50vw;
         margin: 6vw 0vw 0vw 6vw;
     }
 
-    .result{
+    .result {
         /* margin-top: 10vw; */
         flex-direction: column;
         top: 20vw;
     }
 
-    .heading{
+    .heading {
         font-size: 3vw;
     }
 
-    .IP-result , .location-result , .ISP-result , .timezone-result{
+    .IP-result,
+    .location-result,
+    .ISP-result,
+    .timezone-result {
         font-size: 5vw;
         width: 83vw;
         margin-bottom: 0vw;
     }
 
-    .IP , .location , .ISP , .timezone{
+    .IP,
+    .location,
+    .ISP,
+    .timezone {
         margin-top: 4vw;
         text-align: center;
     }
 
-    .ISP{
+    .ISP {
         margin-bottom: 8vw;
     }
 
-    #map{
-        height: 170vw;
+    #map {
+        height: 100%;
         /* background-size: cover; */
     }
 
-    .attribution{
+    .attribution {
         display: none;
     }
 
-    .topBar{
-        background-size: 300vw;
+    .topBar {
+        background-image: url(images/pattern-bg-mobile.png);
+        background-size: cover;
     }
 }
-
-
-

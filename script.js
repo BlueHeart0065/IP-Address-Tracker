@@ -61,12 +61,24 @@ search.onclick = () => {
         zone.innerHTML = data.location.city + " , " + data.location.timezone;
         Ip.innerHTML = data.ip;
 
-        var lat = data.location.lat;
-        var lng = data.location.lng;
-        mymap.setView([lat, lng], -13); 
-        L.marker([lat, lng], 10).addTo(mymap); 
+        var markerIcon = L.icon({
+            iconUrl: 'images/icon-location.svg', // Replace with the path to your marker icon image
+            iconSize: [32, 43], // Adjust the size as needed
+            iconAnchor: [16, 32], // Adjust the anchor point if needed
+        });
+
+        mymap.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                mymap.removeLayer(layer);
+            }
+        });
+
+        var latitude = data.location.lat;
+        var longitude = data.location.lng;
+        L.marker([latitude, longitude],{ icon: markerIcon }, 10 ).addTo(mymap); 
         // L.marker([0,0,13]).addTo(mymap);
-        mymap.setView([lat, lng], 15).addTo(mymap);
+        mymap.setView([latitude, longitude], 14).addTo(mymap);
+        marker.bindPopup("<b>${data.location.city}, ${data.location.country}").openPopup();
 
     })
 }
