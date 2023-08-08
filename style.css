@@ -150,6 +150,10 @@ input::-webkit-inner-spin-button {
         margin-left: 5vw;
     }
 
+    .search-input::placeholder{
+        font-size: 4vw;
+    }
+
     .searchButton{
         width: 15vw;
         height: 15vw;
@@ -183,12 +187,20 @@ input::-webkit-inner-spin-button {
     }
 
     .ISP{
-        margin-bottom: 6vw;
+        margin-bottom: 8vw;
     }
 
     #map{
-        height: 150vw;
+        height: 170vw;
         /* background-size: cover; */
+    }
+
+    .attribution{
+        display: none;
+    }
+
+    .topBar{
+        background-size: 300vw;
     }
 }
 
