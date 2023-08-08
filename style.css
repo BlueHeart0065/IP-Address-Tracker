@@ -131,7 +131,66 @@ input::-webkit-inner-spin-button {
     /* background-color: #3a3a3a; */
 }
 
+@media only screen and (max-width: 800px){
 
+    .title{
+        font-size: 6vw;
+        margin-top: 8vw;
+    }
+
+    .searchBar{
+        height: 15vw;
+        margin-top: 5vw;
+    }
+
+    .search-input{
+        width: 70vw;
+        height: 13vw;
+        font-size: 5vw;
+        margin-left: 5vw;
+    }
+
+    .searchButton{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .searchButton svg{
+        width: 50vw;
+        height: 50vw;
+        margin: 6vw 0vw 0vw 6vw;
+    }
+
+    .result{
+        /* margin-top: 10vw; */
+        flex-direction: column;
+        top: 20vw;
+    }
+
+    .heading{
+        font-size: 3vw;
+    }
+
+    .IP-result , .location-result , .ISP-result , .timezone-result{
+        font-size: 5vw;
+        width: 83vw;
+        margin-bottom: 0vw;
+    }
+
+    .IP , .location , .ISP , .timezone{
+        margin-top: 4vw;
+        text-align: center;
+    }
+
+    .ISP{
+        margin-bottom: 6vw;
+    }
+
+    #map{
+        height: 150vw;
+        /* background-size: cover; */
+    }
+}
 
 
 
