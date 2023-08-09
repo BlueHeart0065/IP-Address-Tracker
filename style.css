@@ -131,7 +131,7 @@ input::-webkit-inner-spin-button {
 }
 
 #map {
-    height: 50vw;
+    height: 40vw;
     z-index: 0;
     /* background-color: #3a3a3a; */
 }
@@ -192,9 +192,9 @@ input::-webkit-inner-spin-button {
     }
 
     .result {
-        /* margin-top: 10vw; */
+        margin-top: -40vw; 
         flex-direction: column;
-        top: 20vw;
+        top: 50vw;
     }
 
     .heading {
@@ -223,7 +223,7 @@ input::-webkit-inner-spin-button {
     }
 
     #map {
-        height: 100%;
+        height: 170vw;
         /* background-size: cover; */
     }
 
